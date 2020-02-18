@@ -165,8 +165,31 @@ a {
   vertical-align: middle;
 }
 
+.jumbo-right {
+  float: right;
+}
+
 .jumbo-right img {
-  width: 50%;
+  width: 40%;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 767px) {
+  .jumbo-left {
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+
+  .jumbo-right {
+    float: right;
+    width: 100%;
+    text-align: center;
+  }
+
+  .jumbo-right img {
+    width: 100%;
+    vertical-align: middle;
+  }
 }
 
