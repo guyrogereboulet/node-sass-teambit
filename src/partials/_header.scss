@@ -1,0 +1,63 @@
+.header {
+  width: $widthInner;
+  height: $headerHeight;
+  margin: auto;
+  border-bottom: 1px solid $primaryColor;
+  line-height: $headerHeight;
+
+  &-left {
+    float: left;
+    width: 30%;
+    height: 100%;
+    img {
+      vertical-align: middle;
+    }
+  }
+  &-right {
+    float: right;
+    // width: 70%;
+    height: 100%;
+    font-size: 70%;
+    .menu {
+      display: none;
+    }
+    .menu-inline {
+      li {
+        display: inline-block;
+        padding: 0 0 0 20px;
+        a {
+          font-weight: bold;
+        }
+        a:hover {
+          color: $secondColor;
+        }
+        .btn {
+          svg {
+            vertical-align: text-top;
+          }
+        }
+        .btn:hover {
+          // background: $secondColor;
+          color: white;
+          svg {
+            .logo-color {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .dropdown {
+      display: none;
+    }
+
+    @media screen and (min-width: $breackpointSmall) {
+      i.fa-bars {
+        display: none;
+      }
+      .menu-inline {
+        display: block;
+      }
+    }
+  }
+}

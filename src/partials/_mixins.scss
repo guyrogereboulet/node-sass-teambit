@@ -1,14 +1,12 @@
-@mixin floatContainer {
-  float: left;
-  height: 100%;
-}
-
-@mixin btn {
+@mixin btn ($borderColor, $backgroundColor, $borderRadius,
+$padding, $lineHeight) {
   display: inline-block;
-  padding: 5px;
-  margin: 10px;
-  background-color: $brandColor;
-  border: 1px solid darken($brandColor, 10);
-  border-radius: 5px;
-  font-size: 20px;
+  padding: $padding;
+  border: 1px solid $borderColor;
+  background-color: $backgroundColor;
+  border-radius: $borderRadius;
+  line-height: $lineHeight;
+  &:hover {
+    background-color: darken($backgroundColor, 20);
+  }
 }

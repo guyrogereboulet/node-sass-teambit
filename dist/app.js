@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\eboul\desktop\test\src\app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! C:\Users\eboul\desktop\test\src\app.scss */"./src/app.scss");
+__webpack_require__(/*! /Users/chiarapassaro/Desktop/boolean/sass-teambit/src/app.js */"./src/app.js");
+module.exports = __webpack_require__(/*! /Users/chiarapassaro/Desktop/boolean/sass-teambit/src/app.scss */"./src/app.scss");
 
 
 /***/ })

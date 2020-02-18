@@ -1,63 +1,106 @@
-* {
+@import url(//db.onlinewebfonts.com/c/32eb6c28879dcfcaf97b75a5194441e9?family=HarmoniaSansProCyrRegular);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: lightcoral;
+  font-family: "HarmoniaSansProCyrRegular", Arial, sans-serif;
   font-size: 18px;
 }
 
-.container header,
-.container footer {
-  background-color: pink;
-  height: 70px;
+a {
+  text-decoration: none;
+  color: #58402B;
 }
 
-.container main {
-  background-color: yellow;
-  height: calc(100vh - 140px);
-}
-
-.container main:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.container main .left,
-.container main .right {
-  float: left;
-  height: 100%;
-  background-color: lightblue;
-  width: 20%;
-}
-
-.container main .center {
-  float: left;
-  height: 100%;
-  width: 60%;
+.menu {
+  list-style: none;
 }
 
 .btn {
   display: inline-block;
-  padding: 5px;
-  margin: 10px;
-  background-color: lightcoral;
-  border: 1px solid #eb5252;
+  padding: 10px;
+  border: 1px solid #263971;
+  background-color: #ccc;
   border-radius: 5px;
-  font-size: 20px;
+  line-height: 20px;
 }
 
-.btn-blue {
+.btn:hover {
+  background-color: #999999;
+}
+
+.header {
+  width: 85%;
+  height: 85px;
+  margin: auto;
+  border-bottom: 1px solid #58402B;
+  line-height: 85px;
+}
+
+.header-left {
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+
+.header-left img {
+  vertical-align: middle;
+}
+
+.header-right {
+  float: right;
+  height: 100%;
+  font-size: 70%;
+}
+
+.header-right .menu {
+  display: none;
+}
+
+.header-right .menu-inline li {
   display: inline-block;
-  padding: 5px;
-  margin: 10px;
-  background-color: lightcoral;
-  border: 1px solid #eb5252;
-  border-radius: 5px;
-  font-size: 20px;
-  background-color: blue;
+  padding: 0 0 0 20px;
+}
+
+.header-right .menu-inline li a {
+  font-weight: bold;
+}
+
+.header-right .menu-inline li a:hover {
+  color: #263971;
+}
+
+.header-right .menu-inline li .btn svg {
+  vertical-align: text-top;
+}
+
+.header-right .menu-inline li .btn:hover {
+  color: white;
+}
+
+.header-right .menu-inline li .btn:hover svg .logo-color {
+  display: none;
+}
+
+.header-right .dropdown {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .header-right i.fa-bars {
+    display: none;
+  }
+
+  .header-right .menu-inline {
+    display: block;
+  }
 }
 
