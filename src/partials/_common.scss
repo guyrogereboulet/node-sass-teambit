@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $brandColor;
+  font-size: 18px;
+}
+
+.container {
+  header,
+  footer {
+    background-color:pink;
+    height: $heightHeader;
+  }
+  main {
+    background-color: yellow;
+    height: calc(100vh - #{$heightHeader * 2});
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .left,
+    .right {
+      @include floatContainer;
+      background-color: lightblue;
+      width: 20%;
+    }
+    .center {
+      @include floatContainer;
+      width: 60%;
+    }
+  }
+}
+
+.btn {
+  @include btn;
+}
+
+.btn-blue {
+  @include btn;
+  background-color: blue;
+}
+
+
+// Modo alternativo di scrivere il bottone blu
+// .btn {
+//   @include btn;
+//   &-blue {
+//     @include btn;
+//     background-color: blue;
+//   }
+// }
