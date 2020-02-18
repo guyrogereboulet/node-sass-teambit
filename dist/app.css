@@ -173,7 +173,7 @@ a {
     text-align: center;
   }
   .jumbo-right img {
-    width: 600px;
+    width: 100%;
     vertical-align: middle;
   }
 }
