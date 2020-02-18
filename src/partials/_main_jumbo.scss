@@ -9,11 +9,32 @@
     width: 50%;
     text-align: left;
     color: $primaryColor;
-    line-height: 70px;
 
-    h1 {
-      font-size:$fontSizeBase * 3;
+    &-title {
+      line-height: 70px;
+      margin-bottom: 20px;
+      h1 {
+        font-size:$fontSizeBase * 3;
+      }
     }
+
+    &-text {
+      line-height: 30px;
+    }
+
+    .jumbo-btn {
+      margin-top: 20px;
+      ul {
+        display: flex;
+        align-items: center;
+        li {
+          padding-right:10px;
+        }
+
+      }
+    }
+
+
   }
 
   &-right {

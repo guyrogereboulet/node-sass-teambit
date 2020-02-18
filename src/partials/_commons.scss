@@ -27,5 +27,6 @@ a {
 }
 
 .btn {
+  // Importo il btn che ho creato nel file "_mixins.scss"
   @include btn($secondColor, $thirdColor, 5px, 10px, 20px);
 }

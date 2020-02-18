@@ -116,11 +116,32 @@ a {
   width: 50%;
   text-align: left;
   color: #58402B;
-  line-height: 70px;
 }
 
-.jumbo-left h1 {
+.jumbo-left-title {
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+
+.jumbo-left-title h1 {
   font-size: 54px;
+}
+
+.jumbo-left-text {
+  line-height: 30px;
+}
+
+.jumbo-left .jumbo-btn {
+  margin-top: 20px;
+}
+
+.jumbo-left .jumbo-btn ul {
+  display: flex;
+  align-items: center;
+}
+
+.jumbo-left .jumbo-btn ul li {
+  padding-right: 10px;
 }
 
 .jumbo-right img {
