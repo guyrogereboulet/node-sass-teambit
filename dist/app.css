@@ -104,3 +104,27 @@ a {
   }
 }
 
+.jumbo {
+  width: 85%;
+  height: 600px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.jumbo-left {
+  float: left;
+  width: 50%;
+  text-align: left;
+  color: #58402B;
+  line-height: 70px;
+}
+
+.jumbo-left h1 {
+  font-size: 54px;
+}
+
+.jumbo-right img {
+  width: 50%;
+  vertical-align: middle;
+}
+
