@@ -83,6 +83,7 @@ a {
 }
 
 .header-right .menu-inline li .btn:hover {
+  background: #263971;
   color: white;
 }
 
@@ -142,6 +143,26 @@ a {
 
 .jumbo-left .jumbo-btn ul li {
   padding-right: 10px;
+}
+
+.jumbo-left .jumbo-btn ul li a.btn {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #30488F;
+  border-radius: 5px;
+  line-height: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.jumbo-left .jumbo-btn ul li a.btn:hover {
+  background-color: #2a3e7c;
+}
+
+.jumbo-left .jumbo-btn ul li a.btn img {
+  height: 15px;
+  vertical-align: middle;
 }
 
 .jumbo-right img {

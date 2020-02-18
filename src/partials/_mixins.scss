@@ -10,3 +10,17 @@ $padding, $lineHeight) {
     background-color: darken($backgroundColor, 20);
   }
 }
+
+@mixin btn-jumbo ($borderColor, $backgroundColor, $borderRadius,
+$padding, $lineHeight, $color) {
+  display: inline-block;
+  padding: $padding;
+  border: 1px solid $borderColor;
+  background-color: $backgroundColor;
+  border-radius: $borderRadius;
+  line-height: $lineHeight;
+  color: $color;
+  &:hover {
+    background-color: darken($backgroundColor, 5);
+  }
+}

@@ -29,6 +29,14 @@
         align-items: center;
         li {
           padding-right:10px;
+           a.btn {
+             @include btn-jumbo (black, #30488F, 5px, 10px, 10px, white);
+             font-size: 15px;
+               img {
+                 height: 15px;
+                 vertical-align: middle;
+               }
+           }
         }
 
       }
