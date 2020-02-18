@@ -41,36 +41,46 @@
 
       }
     }
-
-
+    a.jumbo-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-size: $fontSizeBase * 0.8;
+    }
+    a.jumbo-link:hover {
+      color: $secondColor;
+    }
   }
 
   &-right {
     float: right;
+    width: 50%;
     img {
-      width: 40%;
+      width: 600px;
       vertical-align: middle;
     }
   }
 
-  @media screen and (min-width:$breackpointSmall) {
+  @media screen and (max-width:$breackpointMedium) {
     &-left {
-      float: left;
+      float: none;
       width: 100%;
       text-align: center;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
     &-right {
-      float: right;
+      float: none;
       width: 100%;
       text-align: center;
       img {
-        width: 100%;
+        width: 600px;
         vertical-align: middle;
       }
     }
   }
-
-
 
 
 }

@@ -32,7 +32,6 @@ a {
   border-radius: 5px;
   line-height: 20px;
 }
-
 .btn:hover {
   background-color: #999999;
 }
@@ -44,62 +43,49 @@ a {
   border-bottom: 1px solid #58402B;
   line-height: 85px;
 }
-
 .header-left {
   float: left;
   width: 30%;
   height: 100%;
 }
-
 .header-left img {
   vertical-align: middle;
 }
-
 .header-right {
   float: right;
   height: 100%;
   font-size: 70%;
 }
-
 .header-right .menu {
   display: none;
 }
-
 .header-right .menu-inline li {
   display: inline-block;
   padding: 0 0 0 20px;
 }
-
 .header-right .menu-inline li a {
   font-weight: bold;
 }
-
 .header-right .menu-inline li a:hover {
   color: #263971;
 }
-
 .header-right .menu-inline li .btn svg {
   vertical-align: text-top;
 }
-
 .header-right .menu-inline li .btn:hover {
   background: #263971;
   color: white;
 }
-
 .header-right .menu-inline li .btn:hover svg .logo-color {
   display: none;
 }
-
 .header-right .dropdown {
   display: none;
 }
-
 @media screen and (min-width: 767px) {
   .header-right i.fa-bars {
     display: none;
   }
-
   .header-right .menu-inline {
     display: block;
   }
@@ -111,40 +97,32 @@ a {
   margin: auto;
   margin-top: 100px;
 }
-
 .jumbo-left {
   float: left;
   width: 50%;
   text-align: left;
   color: #58402B;
 }
-
 .jumbo-left-title {
   line-height: 70px;
   margin-bottom: 20px;
 }
-
 .jumbo-left-title h1 {
   font-size: 54px;
 }
-
 .jumbo-left-text {
   line-height: 30px;
 }
-
 .jumbo-left .jumbo-btn {
   margin-top: 20px;
 }
-
 .jumbo-left .jumbo-btn ul {
   display: flex;
   align-items: center;
 }
-
 .jumbo-left .jumbo-btn ul li {
   padding-right: 10px;
 }
-
 .jumbo-left .jumbo-btn ul li a.btn {
   display: inline-block;
   padding: 10px;
@@ -155,41 +133,47 @@ a {
   color: white;
   font-size: 15px;
 }
-
 .jumbo-left .jumbo-btn ul li a.btn:hover {
   background-color: #2a3e7c;
 }
-
 .jumbo-left .jumbo-btn ul li a.btn img {
   height: 15px;
   vertical-align: middle;
 }
-
+.jumbo-left a.jumbo-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14.4px;
+}
+.jumbo-left a.jumbo-link:hover {
+  color: #263971;
+}
 .jumbo-right {
   float: right;
+  width: 50%;
 }
-
 .jumbo-right img {
-  width: 40%;
+  width: 600px;
   vertical-align: middle;
 }
-
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 1144px) {
   .jumbo-left {
-    float: left;
+    float: none;
     width: 100%;
     text-align: center;
   }
-
+  .jumbo-left ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .jumbo-right {
-    float: right;
+    float: none;
     width: 100%;
     text-align: center;
   }
-
   .jumbo-right img {
-    width: 100%;
+    width: 600px;
     vertical-align: middle;
   }
 }
-
