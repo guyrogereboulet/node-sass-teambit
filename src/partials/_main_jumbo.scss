@@ -59,7 +59,8 @@
       vertical-align: middle;
     }
   }
-
+  
+ //mediaquery
   @media screen and (max-width:$breackpointMedium) {
     &-left {
       float: none;
